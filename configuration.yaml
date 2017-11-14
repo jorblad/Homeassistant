@@ -56,8 +56,16 @@ map:
 sun:
 
 # Weather prediction
-sensor:
-  - platform: yr
+sensor: !include sensors.yaml
+
+#Rflink
+rflink:
+  port: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0042_75533343336351213081-if00
+
+#Lights
+light: !include lights.yaml
+
+#switch: !include switch.yaml
 
 # Text to speech
 tts:
