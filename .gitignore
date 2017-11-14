@@ -1,0 +1,8 @@
+
+*.DS_Store
+deps/
+secrets.yaml
+*.db
+*.log
+.uuid
+.HA_VERSION
