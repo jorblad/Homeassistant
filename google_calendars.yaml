@@ -1,0 +1,102 @@
+
+- cal_id: h3855v4s5p677g95omnupinlso@group.calendar.google.com
+  entities:
+  - device_id: uv
+    name: UV
+    track: true
+
+- cal_id: c9rkad7otpa4inli24o4lifv30@group.calendar.google.com
+  entities:
+  - device_id: nyhem_2017
+    name: Nyhem 2017
+    track: true
+
+- cal_id: l8o6t52pk4fttf781tcuh3sc7mo7loqp@import.calendar.google.com
+  entities:
+  - device_id: myhirehop_calendar
+    name: MyHireHop Calendar
+    track: true
+
+- cal_id: 330tqc5ho6s7s5rp9ph37ntnbs@group.calendar.google.com
+  entities:
+  - device_id: sjobergssons_teknik
+    name: "Sj\xF6bergssons Teknik"
+    track: true
+
+- cal_id: t0hbpjmn32v1j403gfdvv51kec@group.calendar.google.com
+  entities:
+  - device_id: temadagar
+    name: Temadagar
+    track: true
+
+- cal_id: samster9312@gmail.com
+  entities:
+  - device_id: samster9312gmailcom
+    name: samster9312@gmail.com
+    track: true
+
+- cal_id: 9p9lpb9e6pp5tn78bq8kh272jc@group.calendar.google.com
+  entities:
+  - device_id: nutb2016
+    name: Nutb2016
+    track: true
+
+- cal_id: lm9j9g0lkm5sflpbu226dk8vvs@group.calendar.google.com
+  entities:
+  - device_id: tekniker_furubackskyrkan
+    name: Tekniker Furubackskyrkan
+    track: true
+
+- cal_id: 8e3b1edvsjs0dnd21290gmn2q8@group.calendar.google.com
+  entities:
+  - device_id: skolschema
+    name: Skolschema
+    track: true
+
+- cal_id: eh9j56m5em4sh9vq3j4m02pptsvonubf@import.calendar.google.com
+  entities:
+  - device_id: furubackskyrkan_samuel_sjobergsson
+    name: "Furubackskyrkan: Samuel Sj\xF6bergsson"
+    track: true
+
+- cal_id: 54v5gkcsqr6kilm86suq9l3akb0ipqk6@import.calendar.google.com
+  entities:
+  - device_id: furubackskyrkan_samuel_sjobergsson
+    name: "Furubackskyrkan: Samuel Sj\xF6bergsson"
+    track: true
+
+- cal_id: '#contacts@group.v.calendar.google.com'
+  entities:
+  - device_id: contacts
+    name: Contacts
+    track: true
+
+- cal_id: sv.christian#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: kristna_hogtider
+    name: "Kristna h\xF6gtider"
+    track: true
+
+- cal_id: sv.swedish#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: helgdagar_i_sverige
+    name: Helgdagar i Sverige
+    track: true
+
+- cal_id: i_85.188.103.36#sunrise@group.v.calendar.google.com
+  entities:
+  - device_id: sunrisesunset_jonkoping
+    name: "Sunrise/Sunset: J\xF6nk\xF6ping"
+    track: true
+
+- cal_id: p#weather@group.v.calendar.google.com
+  entities:
+  - device_id: weather_2740
+    name: 'Weather: 2740'
+    track: true
+
+- cal_id: p#weeknum@group.v.calendar.google.com
+  entities:
+  - device_id: week_numbers
+    name: Week Numbers
+    track: true

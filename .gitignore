@@ -6,3 +6,10 @@ secrets.yaml
 *.log
 .uuid
 .HA_VERSION
+plex.conf
+*.spotify-token-cache
+.google.token
+harmony_harmony_hub.conf
+tts/a94a8fe5ccb19ba61c4c0873d391e987982fbbd3_en_-_google.mp3
+scenesOLD.yaml
+configurationOLD.yaml

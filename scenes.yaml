@@ -1,0 +1,14 @@
+- name: Natt
+  entities:
+    group.window:
+      state: off
+    media_player.spotify:
+      state: paused
+    media_player.vardagsrum_tv:
+      state: off
+- name: Morgon
+  entities:
+    group.window:
+      state: on
+    #media_player.spotify:
+      #state: playing

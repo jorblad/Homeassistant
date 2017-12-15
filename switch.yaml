@@ -1,2 +1,6 @@
   - platform: rflink
-    automatic_add: true
+    #devices:
+      #newkaku_01718f56_10:
+        #name: Vardagrsum fönster
+      #newkaku_0171856_e:
+        #name: Sovrum fönster

@@ -1,0 +1,41 @@
+sensor.balkong2:
+  hidden: true
+sensor.tunex_6701_bat: {}
+sensor.xiron_6701_bat:
+  hidden: true
+group.window:
+  friendly_name: "F\xF6nsterlampor"
+calendar.contacts:
+  hidden: true
+calendar.furubackskyrkan_samuel_sjobergsson:
+  hidden: true
+calendar.furubackskyrkan_samuel_sjobergsson_2:
+  hidden: true
+calendar.helgdagar_i_sverige:
+  hidden: true
+calendar.kristna_hogtider:
+  hidden: true
+calendar.myhirehop_calendar:
+  hidden: true
+calendar.nutb2016:
+  hidden: true
+calendar.nyhem_2017:
+  hidden: true
+calendar.skolschema:
+  hidden: true
+calendar.sunrisesunset_jonkoping:
+  hidden: true
+calendar.tekniker_furubackskyrkan:
+  hidden: true
+calendar.temadagar:
+  hidden: true
+calendar.uv:
+  hidden: true
+calendar.weather_2740:
+  hidden: true
+calendar.week_numbers:
+  hidden: true
+sensor.balkongfuktighet: {}
+sensor.balkongbatteri: {}
+light.newkaku_01718f56_e:
+  friendly_name: "F\xF6nsterlampa k\xF6k"

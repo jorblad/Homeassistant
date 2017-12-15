@@ -1,0 +1,18 @@
+# This will override the default home zone
+- name: Home
+  latitude: 57.723322
+  longitude: 12.925871
+  radius: 100
+  icon: mdi:home
+#Mölndals stad it-avdelning
+- name: Work
+  latitude: 57.659001
+  longitude: 12.016436
+  radius: 100
+  icon: mdi:city
+
+- name: Roslingstigen 23
+  latitude: 57.702857
+  longitude: 14.178945
+  radius: 100
+  icon: mdi:home

@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: 57.723322
-  longitude: 12.925871
+  latitude: !secret latitude
+  longitude: !secret longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 137
   # metric for Metric, imperial for Imperial
@@ -14,11 +14,11 @@ homeassistant:
   customize: !include customize.yaml
 
 # Show links to resources in log and frontend
-introduction:
+#introduction:
 
 # Enables the frontend
 frontend:
-
+  javascript_version: latest
 # Enables configuration UI
 config:
 
@@ -26,7 +26,7 @@ http:
   # Secrets are defined in the file secrets.yaml
   # api_password: !secret http_password
   # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
+  base_url: hass.sjobergsson.com:8123
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -58,12 +58,22 @@ sun:
 # Weather prediction
 sensor: !include sensors.yaml
 
+#HarmonyHub
+remote:
+  - platform: harmony
+    name: VardagsrumTV
+    host: 192.168.15.210   # The IP of your hub
+    activity: spela dator
+
 #Rflink
 rflink:
-  port: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0042_75533343336351213081-if00
+  port: /dev/ttyACM0
 
 #Lights
 light: !include lights.yaml
+
+#Media Players
+media_player: !include media_player.yaml
 
 #switch: !include switch.yaml
 
@@ -74,3 +84,24 @@ tts:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+scene: !include scenes.yaml
+zone: !include zones.yaml
+
+#Google Calendar API
+google:
+ client_id: !secret google_calendar_client_id
+ client_secret: !secret google_calendar_client_secret
+
+influxdb:
+  host: 192.168.200.100
+  username: !secret influxdb_username
+  password: !secret influxdb_password
+
+device_tracker:
+  - platform: owntracks_http
+
+#logger:
+#  default: info
+#  logs:
+#    rflink: debug
+#    homeassistant.components.rflink: debug

@@ -1,0 +1,25 @@
+  - platform: webostv
+    host: 192.168.15.201
+    name: Vardagrsum TV
+    timeout: 5
+    filename: webostv.conf
+    turn_on_action:
+      service: wake_on_lan.send_magic_packet
+      data:
+        mac: 3C:CD:93:ED:7C:4F
+    customize:
+      sources:
+        - LiveTV
+        - Netflix
+        - Onkyo
+        - YouTube
+
+#Spotify
+  - platform: spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
+
+#Plex
+  - platform: plex
+    entity_namespace: 'plex'
+    automatic_add: true

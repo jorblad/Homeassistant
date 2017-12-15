@@ -1,3 +1,72 @@
+#Yr Weather
   - platform: yr
+    monitored_conditions:
+      - temperature
+      - symbol
+      - windSpeed
+      - windDirection
+      - humidity
+      - fog
+      - cloudiness
+      - lowClouds
+      - mediumClouds
+      - highClouds
+      - dewpointTemperature
+#Actual rflink sensors
   - platform: rflink
     automatic_add: true
+    devices:
+      oregontemphygro_22855_temp:
+        name: Ute-temp
+        sensor_type: temperature
+      oregontemphygro_22855_hum:
+        name: Ute-fuktighet
+        sensor_type: humidity
+      oregontemphygro_22855_hstatus:
+        name: Ute-status
+        sensor_type: humidity_status
+      oregontemphygro_22855_bat:
+        name: Ute-batteri
+        sensor_type: battery
+      tunex_6701_temp:
+        name: Balkong-temperatur
+        sensor_type: temperature
+      tunex_6701_hum:
+        name: Balkong-fuktighet
+        sensor_type: humidity
+      tunex_6701_bat:
+        name: Balkong-batteri
+        sensor_type: battery
+      tunex_3501_temp:
+        name: Kylskåp-temperatur
+        sensor_type: temperature
+      tunex_3501_hum:
+        name: Kylskåp-fuktighet
+        sensor_type: fuktighet
+      tunex_3501_bat:
+        name: Kylskåp-batteri
+        sensor_type: battery
+      xiron_6701_temp:
+        name: balkong2
+        sensor_type: temperature
+
+#Google travel time till praktik och Barnarp
+  - platform: google_travel_time
+    api_key: !secret google_calendar_api_key
+    origin: Parkgatan 1A, 554 39 Borås
+    destination: Kungsbackaleden, 431 35 Mölndal
+    name: Tid till jobbet
+    arrival_time: 07:00:00
+
+  - platform: google_travel_time
+    api_key: !secret google_calendar_api_key
+    origin: device_tracker.samuel_lgg4
+    destination: Roslingstigen 23, 556 33 Jönköping
+    name: Tid till Barnarp
+
+#HarmonyHub
+  - platform: template
+    sensors:
+      vardagsrum:
+        value_template: '{{ states.remote.vardagsrumtv.attributes.current_activity }}'
+        friendly_name: 'Vardagsrum HarmonyHub'

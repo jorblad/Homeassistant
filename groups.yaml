@@ -1,0 +1,8 @@
+  window:
+    name: Fönsterlampor
+    icon: mdi:account-multiple
+    entities:
+      - light.vardagrsum_fonster_mot_balkong
+      - light.vardagsrum_fonster_mot_allingsasvagen
+      - light.kok_fonster
+      - light.sovrum_fonster
