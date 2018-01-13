@@ -62,7 +62,7 @@ sensor: !include sensors.yaml
 remote:
   - platform: harmony
     name: VardagsrumTV
-    host: 192.168.15.210   # The IP of your hub
+    host: 192.168.15.152   # The IP of your hub
     activity: spela dator
 
 #Rflink

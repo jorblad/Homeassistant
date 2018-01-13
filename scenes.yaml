@@ -6,9 +6,19 @@
       state: paused
     media_player.vardagsrum_tv:
       state: off
+    remote.harmony_hub_2:
+      state: off
 - name: Morgon
   entities:
     group.window:
       state: on
     #media_player.spotify:
       #state: playing
+- name: lights_at_dark
+  entities:
+    group.window:
+      state: on
+- name: lights_at_sunrise
+  entities:
+    group.window:
+      state: off

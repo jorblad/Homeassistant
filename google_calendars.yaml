@@ -100,3 +100,15 @@
   - device_id: week_numbers
     name: Week Numbers
     track: true
+
+- cal_id: o7aduok7ivio19q7c0rd5gia80@group.calendar.google.com
+  entities:
+  - device_id: molndal_stad
+    name: "M\xF6lndal stad"
+    track: true
+
+- cal_id: p54aoq6evu9mdj4mhsm6gk2q0cim9i9r@import.calendar.google.com
+  entities:
+  - device_id: kalender
+    name: Kalender
+    track: true
